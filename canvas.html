@@ -5,9 +5,14 @@
         <script src="/socket.io/socket.io.js"></script>
         <script src="/farbtastic.js"></script>
         <link rel="stylesheet" href="/farbtastic.css" type="text/css" />
+        <script>
+            // Socket Event Connection
+            var socket = io.connect();
+            socket.emit('join', '<%=room %>');
+        </script>
         <script src="/js/cli_room.js"></script>
-        
     </head>
+
     <body>
         <table border="10">
             <tr>
@@ -34,3 +39,4 @@
         </table>
     </body>
 </html>
+

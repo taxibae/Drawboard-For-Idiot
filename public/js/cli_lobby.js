@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     /*Button Event Connection*/
     $('#container').on('click','button', function () {
-        var room = this.attr('data-room');
+        var room = $(this).attr('data-room');
         location = '/canvas/'+room;
     });    
 

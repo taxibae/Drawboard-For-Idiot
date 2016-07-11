@@ -48,10 +48,10 @@ app.get('/room', function(req, res) {
 
 /*Creating Socket Server*/
 var io = socketio.listen(server);
-var roomId = '';
+
 io.sockets.on('connection', function (socket) {
     // Event Define
-    //var roomId = '';
+    var roomId = '';
     
     socket.on('disconnect', function(reason){
         console.log('User 1 disconnected because '+reason);
