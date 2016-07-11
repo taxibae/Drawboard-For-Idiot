@@ -1,4 +1,4 @@
-# Drawboard-For-Idoit
+# Drawboard-For-Idiot
 Web paintboard
 
 # 변경 사항
