@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Canvers For Idiot</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/farbtastic.js"></script>
+        <link rel="stylesheet" href="/farbtastic.css" type="text/css" />
+        <script src="/js/cli_room.js"></script>
+        
+    </head>
+    <body>
+        <table border="10">
+            <tr>
+                <td rowspan="3">
+                    <!--Canvas-->
+                    <canvas id="canvasboard" width="1200" height="800"></canvas>
+                </td>
+                <td height="200">
+                    <!--ColorPicker-->
+                    <div id="colorpicker"></div>
+                </td>
+            </tr>
+            <tr>
+                <td height="25">
+                    <!--SliderA : pressure-->
+                    <input id="sliderA" type="range" min="0" max="20" value="5" />
+                    <!--SliderB : opacity-->
+                    <input id="sliderB" type="range" min="0" max="100" />
+                </td>
+            </tr>
+            <tr>
+                <td style="background : orange;"></td>
+            </tr>
+        </table>
+    </body>
+</html>
